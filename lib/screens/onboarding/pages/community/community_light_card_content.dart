@@ -23,7 +23,6 @@ class CommunityTextColumn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextColumn(
-        title: "Community", text: "sdhs sdhsdhd sdhsdajhdasjd hasdkajdha dj");
+    return TextColumn(title: "Community", text: "sdhs sdajdha dj");
   }
 }
