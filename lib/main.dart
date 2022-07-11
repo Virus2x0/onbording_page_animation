@@ -1,4 +1,5 @@
 import 'package:animation_in_boarding/constants.dart';
+import 'package:animation_in_boarding/screens/onboarding/onbording.dart';
 import 'package:animation_in_boarding/screens/onboarding/pages/community/community_dark_card_content.dart';
 import 'package:animation_in_boarding/screens/onboarding/pages/community/community_light_card_content.dart';
 import 'package:animation_in_boarding/widgets/header.dart';
@@ -16,20 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        backgroundColor: kBlue,
-        body: Column(
-          children: [
-            SizedBox(height: 200, child: Header()),
-            OnbordingPage(
-              darkCardChild: CommunityDarkCardContent(),
-              lightCardChild: CommunityLightCardContent(),
-              number: 1,
-              textColumn: CommunityTextColumn(),
-            ),
-          ],
-        ),
-      ),
+      home: Onboarding(),
     );
   }
 }

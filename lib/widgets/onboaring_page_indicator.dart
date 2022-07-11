@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 
-class _OnboardingPageIndicatorPainter extends CustomPainter {
+class OnboardingPageIndicatorPainter extends CustomPainter {
   final Color color;
   final double startAngle;
   final double indicatorLength;
 
-  _OnboardingPageIndicatorPainter(
-      this.color, this.startAngle, this.indicatorLength);
+  const OnboardingPageIndicatorPainter(
+      {required this.color,
+      required this.startAngle,
+      required this.indicatorLength});
+
   @override
   void paint(Canvas canvas, Size size) {
     var paint = Paint()
@@ -26,11 +29,11 @@ class _OnboardingPageIndicatorPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(_OnboardingPageIndicatorPainter oldDelegate) =>
+  bool shouldRepaint(OnboardingPageIndicatorPainter oldDelegate) =>
       this.color != oldDelegate.color ||
       this.startAngle != oldDelegate.startAngle;
 
   @override
-  bool shouldRebuildSemantics(_OnboardingPageIndicatorPainter oldDelegate) =>
+  bool shouldRebuildSemantics(OnboardingPageIndicatorPainter oldDelegate) =>
       false;
 }

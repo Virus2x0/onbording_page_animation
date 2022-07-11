@@ -4,9 +4,10 @@ import 'package:flutter/material.dart';
 import 'logo.dart';
 
 class Header extends StatelessWidget {
-  // final VoidCallback onSkip;
+  final VoidCallback onSkip;
   const Header({
     Key? key,
+    required this.onSkip,
   }) : super(key: key);
 
   @override
@@ -14,7 +15,7 @@ class Header extends StatelessWidget {
     return Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
       Logo(color: kWhite, size: 32.0),
       GestureDetector(
-          onTap: null,
+          onTap: onSkip,
           child: Text(
             "Skip",
             style:
