@@ -5,10 +5,8 @@ import 'package:animation_in_boarding/screens/onboarding/pages/education/educati
 import 'package:animation_in_boarding/screens/onboarding/pages/work/workContent.dart';
 import 'package:animation_in_boarding/widgets/header.dart';
 import 'package:animation_in_boarding/widgets/next_page_button.dart';
-import 'package:animation_in_boarding/widgets/onboaring_page_indicator.dart';
 import 'package:animation_in_boarding/widgets/onbording_page.dart';
 import 'package:flutter/material.dart';
-
 import '../../widgets/onboardingpage_indicator.dart';
 import 'pages/community/community_dark_card_content.dart';
 
